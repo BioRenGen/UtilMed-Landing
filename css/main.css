@@ -23,11 +23,10 @@ h2 {
     margin-bottom: 1.3em;
 }
 
-h1 {
-    /*font-size: 2rem;*/
-    font-size: 4rem;
-}
 
+.h1, h1 {
+    font-size: 200%;
+}
 a {
     color: #0083e8;
 }
@@ -62,13 +61,16 @@ img {
     margin: 0;
     padding: 0;
 }
-
+p{
+    font-size: 18px;
+}
 p {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    font-size: 2rem;
+    /*margin-top: 1rem;
+    margin-bottom: 2rem;*/
+    /*font-size: 2rem;*/
     line-height: 1.4;
-    font-weight: 300
+    font-weight: 300;
+
 }
 
 .bulletItems p {
@@ -108,6 +110,15 @@ p {
     position: absolute;
     width: 100%;
 }
+.page-footer a{
+    color:#dee2e6;
+}
+.page-footer h6{
+    color:#dee2e6;
+}
+.page-footer p{
+    margin-bottom:0.7rem;
+}
 
 .contactFormSlider {
     margin: 0 auto;
@@ -133,22 +144,6 @@ p {
     padding-top: 1.5rem;
 }
 
-@media screen and (max-width:770px) {
-
-    .license {
-        position: relative;
-        height: auto;    min-height: 100vh;
-    }
-
-    .card-text {
-        font-size: 14px;
-    }
-
-    p {
-        margin-top: -1rem;
-        line-height: 1.4;
-    }
-}
 .btn {
     display: inline-block;
     color: #212529;
@@ -163,6 +158,8 @@ p {
     color: #f4f4f4;
     font-weight: 100;
     line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: initial;
     border-radius: .25rem;background-color: #28a745
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -191,4 +188,141 @@ border: 0px;
 }
 .bulletsBlock {
     text-align: center;
+}
+
+.pt-10 {
+    font-size: 10pt;
+}
+
+.nopad {
+    border: 1px #000 solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:770px) {
+
+    .license {
+        position: relative;
+        height: auto;    min-height: 100vh;
+    }
+
+    .card-text p {
+        font-size: 12px !important;
+        color:red;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: -1rem;
+        line-height: 1.4;
+    }
+    .page-footer p {
+        margin-bottom: 0.7rem;
+    line-height: 3;
+    }
+}
+
+
+
+.card-text {
+    font-size: 13px;
+    text-align: center;
+}
+
+.ContactFormContainer {
+    margin: 0 auto;    font-size: initial;
+}
+
+.footer-copyright {
+    background: #28a745;
+    color: #f4f4f4;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.wrap-input100 {
+    padding: 10px;
+}
+
+.wave {
+  animation: wave 2s linear;
+  animation-iteration-count:infinite;
+  fill: #28a745;
+}
+
+#wave2 {
+  animation-duration:15s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 17s;
+  opacity:.3;
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+.footerContact {
+    background: #28a745;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px !important;
 }

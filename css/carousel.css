@@ -3,10 +3,11 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-    background-image: url('../img/clipboard.svg');background-attachment: fixed;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    background-image: url('../img/clipboard-food-2.svg');
+    background-attachment: fixed;
 }
 
 
@@ -15,30 +16,34 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-  
-   
+    bottom: 3rem;
+    z-index: 10;
+
+
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  min-height: 32rem;
+    min-height: 32rem;
     height: 100%;
 }
+
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
 }
-.carousel-inner{
-     height: 100%;  height: 95vh;
+
+.carousel-inner {
+    height: 100%;
+    height: 98vh;
 }
 
 /* MARKETING CONTENT
@@ -46,15 +51,17 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
+
 .marketing h2 {
-  font-weight: 400;
+    font-weight: 400;
 }
+
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
 }
 
 
@@ -62,20 +69,23 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-       font-size: 250%;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    /*250px*/
+    font-size: 200%;
 }
 
-#myCarousel{
+#myCarousel {
     width: 100%;
 }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 /*
@@ -115,14 +125,19 @@ body {
     opacity: .5;
     -webkit-transition: opacity .6s ease;
     transition: opacity .6s ease;
-    
-}.carousel-indicators .active {
+
+}
+
+.carousel-indicators .active {
     width: 25px;
     height: 5px;
     background-color: rgb(255, 255, 255);
-    margin: 0px;    -webkit-transition: opacity .6s ease;
+    margin: 0px;
+    -webkit-transition: opacity .6s ease;
     transition: opacity .6s ease;
-}.carousel-indicators {
+}
+
+.carousel-indicators {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -139,6 +154,53 @@ body {
     margin-left: 15%;
     margin: 0 auto;
     list-style: none;
-    padding-bottom: 3rem;    -webkit-transition: opacity .6s ease;
+    padding-bottom: 3rem;
+    -webkit-transition: opacity .6s ease;
     transition: opacity .6s ease;
+}
+
+.carousel-caption {
+    top: 40%;
+}
+
+@media screen and (max-height:820px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    .carousel-caption {
+        top: 20%;
+    }
+
+    .carousel-item {
+        min-height: 60rem;
+        height: 100%;
+    }
+
+    .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 60rem;
+    }
+
+    .carousel-inner {
+        height: 100%;
+        height: 100vh;
+    }
+
+    .featurette-heading {
+        font-weight: 300;
+        padding-bottom: 3rem;
+        line-height: 1.3;
+        letter-spacing: -.05rem;
+        font-size: 250%;
+    }p {
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+}
+.footerContact {
+    
 }
