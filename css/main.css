@@ -5,8 +5,6 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -23,12 +21,23 @@ h2 {
     margin-bottom: 1.3em;
 }
 
-
-.h1, h1 {
+/*
+.h1,
+h1 {
     font-size: 200%;
+    font-size: 3em;
 }
+*/
+
+
+h1,
+h2 {
+    font-size: xx-large;
+}
+
 a {
-    color: #0083e8;
+    color: #4caf50;
+    font-weight: 600;
 }
 
 b,
@@ -45,7 +54,7 @@ img {
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-   /* border: 10px solid rgba(0, 0, 0, 0.12);*/
+    /* border: 10px solid rgba(0, 0, 0, 0.12);*/
     border-radius: 4px;
     display: block;
     margin: 1.3em auto;
@@ -61,9 +70,11 @@ img {
     margin: 0;
     padding: 0;
 }
-p{
+
+p {
     font-size: 18px;
 }
+
 p {
     /*margin-top: 1rem;
     margin-bottom: 2rem;*/
@@ -103,30 +114,31 @@ p {
 }
 
 .page-footer {
-    background-color: #28a745;
+    background-color: #4caf50;
     color: #f4f4f4;
     margin-bottom: 0 !important;
     margin-top: 3rem;
     position: absolute;
     width: 100%;
 }
-.page-footer a{
-    color:#dee2e6;
+
+.page-footer a {
+    color: #dee2e6;
 }
-.page-footer h6{
-    color:#dee2e6;
+
+.page-footer h6 {
+    color: #dee2e6;
 }
-.page-footer p{
-    margin-bottom:0.7rem;
+
+.page-footer p {
+    margin-bottom: 0.7rem;
 }
 
 .contactFormSlider {
     margin: 0 auto;
 }
 
-#clients {
-
-}
+#clients {}
 
 .screen {
     min-height: 100vh;
@@ -139,10 +151,10 @@ p {
     -ms-flex-line-pack: center;
     align-content: center;
 }
-
+/*
 .navbar-brand {
     padding-top: 1.5rem;
-}
+}*/
 
 .btn {
     display: inline-block;
@@ -153,39 +165,46 @@ p {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #28a745;
-    border: 2px solid #28a745;
+    background-color: #4caf50;
+    border: 2px solid #4caf50;
+    /* background: #4CAF50;*/
     color: #f4f4f4;
     font-weight: 100;
     line-height: 1.5;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: initial;
-    border-radius: .25rem;background-color: #28a745
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: .25rem;
+    background-color: #4caf50 transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 .table {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
-    font-size: 14px;    margin-top: 4rem;
-    font-weight: 400;    text-align: center;
+    font-size: 14px;
+    margin-top: 4rem;
+    font-weight: 400;
+    text-align: center;
 }
+
 .btnSettings {
-    text-align: center; width: 100%;
-    padding:4vw;
+    text-align: center;
+    width: 100%;
+    padding: 4vw;
 }
 
 
-    .btnContent {
+.btnContent {
     padding-top: 2rem;
-        padding-left: 0;
- 
-        }
+    padding-left: 0;
 
-.card{
-border: 0px;
 }
+
+.card {
+    border: 0px;
+}
+
 .bulletsBlock {
     text-align: center;
 }
@@ -198,92 +217,27 @@ border: 0px;
     border: 1px #000 solid;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:770px) {
-
-    .license {
-        position: relative;
-        height: auto;    min-height: 100vh;
-    }
-
-    .card-text p {
-        font-size: 12px !important;
-        color:red;
-        font-weight: 600;
-    }
-
-    p {
-        margin-top: -1rem;
-        line-height: 1.4;
-    }
-    .page-footer p {
-        margin-bottom: 0.7rem;
-    line-height: 3;
-    }
-}
-
-
-
 .card-text {
     font-size: 13px;
     text-align: center;
 }
 
 .ContactFormContainer {
-    margin: 0 auto;    font-size: initial;
+    margin: 0 auto;
+    font-size: initial;
 }
 
 .footer-copyright {
-    background: #28a745;
+    background: #4caf50;
     color: #f4f4f4;
 }
+
 .form-control {
     display: block;
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.5;
     color: #495057;
@@ -291,32 +245,69 @@ border: 0px;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 .wrap-input100 {
     padding: 10px;
 }
 
 .wave {
-  animation: wave 2s linear;
-  animation-iteration-count:infinite;
-  fill: #28a745;
+    animation: wave 2s linear;
+    animation-iteration-count: infinite;
+    fill: #4caf50;
 }
 
 #wave2 {
-  animation-duration:15s;
-  animation-direction: reverse;
-  opacity: .6
+    animation-duration: 15s;
+    animation-direction: reverse;
+    opacity: .6
 }
+
 #wave3 {
-  animation-duration: 17s;
-  opacity:.3;
+    animation-duration: 17s;
+    opacity: .3;
 }
+
+.footerIcon {
+    padding-left: 0px;
+    margin: 5px;
+    opacity: 0.8;
+}
+
+sup,
+sub {
+    color: red;
+}
+
+p{
+    text-indent: 0px;
+}
+
+.bulletItemTitle{
+   margin-top: revert;
+    font-weight: 100;
+}
+
+
+
+
+
+/*
+.marketing h2 {
+    font-weight: 400;
+    font-size: 3em;
+}*/
+
+
 @keyframes wave {
-  to {transform: translateX(-100%);}
+    to {
+        transform: translateX(-100%);
+    }
 }
+
 .footerContact {
-    background: #28a745;
+    background: #4caf50;
 }
 
 .text-center {
@@ -325,4 +316,54 @@ border: 0px;
 
 footer p {
     font-size: 14px !important;
+}
+
+.text-md-vertecal {
+    margin-top: -10rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width:770px) {
+
+    .license {
+        position: relative;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .card-text p {
+        font-size: 12px !important;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: -1rem;
+        line-height: 1.4;
+    }
+
+    .page-footer p {
+        margin-bottom: 0.7rem;
+        line-height: 2;
+        font-size: 18px !important;
+    }
+
+    .text-md-vertecal {
+        margin-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .page-footer h6 {
+
+        font-size: 2rem;
+        font-weight: 400 !important;
+    }
+
+    .btn-center {
+        text-align: center;
+        padding: 20px;
+    }
+}
+.leader {
+    font-size: 25px;
+    font-weight: 300;
 }

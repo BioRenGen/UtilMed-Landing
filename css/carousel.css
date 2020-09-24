@@ -57,6 +57,7 @@ body {
 
 .marketing h2 {
     font-weight: 400;
+       font-size: 250%; line-height: 1;
 }
 
 .marketing .col-lg-4 p {
@@ -74,14 +75,14 @@ body {
 }
 
 /* Thin out the marketing headings */
+/*
 .featurette-heading {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
-    /*250px*/
     font-size: 200%;
 }
-
+*/
 #myCarousel {
     width: 100%;
 }
@@ -164,10 +165,11 @@ body {
 }
 
 @media screen and (max-height:820px) {
-    h1 {
-        font-size: 3rem !important;
-    }
-
+   
+.marketing h2 {
+    font-weight: 400;
+       font-size: 150%; line-height: 1;
+}
     .carousel-caption {
         top: 20%;
     }
@@ -195,12 +197,10 @@ body {
         padding-bottom: 3rem;
         line-height: 1.3;
         letter-spacing: -.05rem;
-        font-size: 250%;
+        /*font-size: 250%;*/
     }p {
     margin-top: 1rem;
     line-height: 1.4;
 }
 }
-.footerContact {
-    
-}
+
