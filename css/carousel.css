@@ -201,6 +201,10 @@ body {
     }p {
     margin-top: 1rem;
     line-height: 1.4;
+}h1, h2 {
+    font-size: large;
+    font-size: 100%;
+    color:red;
 }
 }
 

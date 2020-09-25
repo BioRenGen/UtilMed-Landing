@@ -39,6 +39,10 @@ a {
     color: #4caf50;
     font-weight: 600;
 }
+a:hover{
+    color:#1e7e34;
+    text-decoration: none;
+}
 
 b,
 strong {
@@ -49,7 +53,10 @@ samp {
     display: none;
 }
 
-
+.navbar-toggler{
+    font-size: 2rem;
+    border: 0;
+}
 img {
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
@@ -371,7 +378,7 @@ footer p {
 }
 
 .LogoLink {
-    font-size: 2rem;
+    font-size: 200%;width: 100%;
 }
 
 
